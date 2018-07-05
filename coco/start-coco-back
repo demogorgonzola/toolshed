@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cd "./coco-wp"
+docker-compose up --abort-on-container-exit

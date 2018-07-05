@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cd "./coco-wp/coco-client-ember"
+ember server

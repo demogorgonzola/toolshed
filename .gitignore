@@ -1,6 +1,3 @@
-*/
-!.atom
-
 .atom/*
 !*.json
 !*.cson

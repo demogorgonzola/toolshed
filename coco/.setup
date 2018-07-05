@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+errorTooManyArguments="Input Error: too many arguments given." #1
+
+errorCocoPathNotGiven="Input Error: coco project path not given." #2
+
+#input check
+if [ $# -eq 0 ]; then
+  echo $errorCocoPathNotGiven
+  exit 2
+elif [ $# -gt 1 ]; then
+  echo $errorTooManyArguments
+  exit 1
+fi
+
+ln -s ../chrome-dev
+ln -s ../docker-shell
+
+ln -s $1/wordpress/wp-content/plugins/awesome-coco/
+ln -s $1/coco-client-ember
