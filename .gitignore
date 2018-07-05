@@ -6,3 +6,4 @@
 !*.cson
 !*.coffee
 !*.less
+!*.list
