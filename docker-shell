@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+errorTooManyArguments="Input Error: too many arguments given." #1
+
+errorDockerNameNotGiven="Input Error: container name not given." #2
+errorDockerNameNotFound="Docker Error: container name not found." #3
+errorDockerNameNotSpecific="Docker Error: found multiple containers containing given name, be more specific." #4
+
+#input check
+if [ $# -eq 0 ]; then
+  echo $errorDockerNameNotGiven
+  exit 2
+elif [ $# -gt 1 ]; then
+  echo $errorTooManyArguments
+  exit 1
+fi
+
+#grab conatiner id
+containerId=$(docker ps -qf name=${1})
+
+#check if container name exists
+if [ -z $(echo -e ${containerId} | tr -d "[:space:]") ]; then
+  echo $errorDockerNameNotFound
+  exit 3
+fi
+
+#check if container name was too general
+if [ $(echo ${containerId} | grep -o " " | wc -l) -gt 1 ]; then
+  echo $errorDockerNameNotSpecific
+  exit 4
+fi
+
+#enter docker container shell
+docker exec -it $containerId /bin/bash
