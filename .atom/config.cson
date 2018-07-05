@@ -1,0 +1,31 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "c9a58fa7-2b81-4344-8b2c-0468d2ea6580"
+  "atom-ide-ui":
+    "atom-ide-datatip":
+      onlyTopDatatip: true
+    use: {}
+  core:
+    disabledPackages: [
+      "git-time-machine"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "atom-material-syntax-dark"
+    ]
+  editor:
+    fontSize: 12
+    showIndentGuide: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "ae8e9eb2-6337-44c8-821f-052dc558a80f"
+  minimap: {}
+  "tree-view":
+    focusOnReveal: false
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+    squashDirectoryNames: true
+  welcome:
+    showOnStartup: false
