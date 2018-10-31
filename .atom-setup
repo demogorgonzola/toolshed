@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 
-ln -s .atom ~/.atom
-apm install --packages-file .atom/packages.list
+apm install --packages-file ./.atom/packages.list
