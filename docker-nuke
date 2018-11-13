@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+docker kill $(docker ps --quiet)
+docker rm $(docker ps --all --quiet)
+docker volume rm $(docker volume ls --quiet)
+
+docker rmi --force --no-prune $(docker images --all --quiet)

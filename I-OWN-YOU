@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+errorPathNotGiven="Input Error: Path not given." #1
+errorTooManyArguments="Input Error: Too many arguments given" #2
+
+if [ $# -eq 0 ]; then
+  echo $errorPathNotGiven
+  exit 1
+elif [ $# -gt 1 ]; then
+  echo $errorTooManyArguments
+  exit 2
+fi
+
+sudo chown -R $USER:$USER ${1}

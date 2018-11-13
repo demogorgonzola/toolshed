@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+docker kill $(docker ps --quiet)
+docker rm $(docker ps --all --quiet)
