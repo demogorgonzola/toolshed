@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-cd "./coco-wp"
-$(npm bin)/cypress open
