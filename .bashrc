@@ -116,12 +116,15 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# user created directives below:
+# USER CREATED DIRECTIVE BELOW:
 
-#default directory Desktop
+# default directory Desktop
 if [ $(pwd) == $HOME ]; then
   cd Desktop
 fi
 
-#add global composer requires to path
-PATH="$HOME/.config/composer/vendor/bin:$PATH"
+# add global composer requires to path
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
+# add go and gobin to path
+export PATH="/usr/local/go/bin:$HOME/go/bin:$PATH"
