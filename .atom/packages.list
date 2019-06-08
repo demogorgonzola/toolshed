@@ -8,13 +8,11 @@ ide-php@0.7.18
 ide-typescript@0.9.1
 ide-vue@0.1.9
 language-blade@0.42.0
-language-hugo@0.5.1
 language-vue@0.24.0
 laravel@0.7.1
 minimap@4.29.9
 php-fmt@0.1.2
 pigments@0.40.2
-platformio-ide-terminal@2.9.1
 teletype@0.13.4
 zentabs@0.8.9
 
