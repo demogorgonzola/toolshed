@@ -2,10 +2,14 @@
 
 So far we got...
 
+---
+
 ##### _Chrome bois_
 * ### chrome-no-cors
 Run chrome without CORS.
 (Note: you or someone above you should have fixed this)
+
+---
 
 #### _Docker dudes_
 * ### docker-exec
@@ -21,6 +25,8 @@ Deletes all the places docker was puttin' those containers
 * ### docker-shell
 Quick SSH into the docker shell
 
+---
+
 #### _Handy Jabronies_
 * ### I-OWN-YOU
 **_"I swear to fucking god if you give me lip"_**
@@ -32,6 +38,8 @@ permission groups.
 WOW, that's so fucking useless for production!"_** This is a more
 flexible version of I-OWN-THIS, a little less "I" and a little more
 "someone elses problem".
+
+---
 
 #### _secret fellas...ssshhhhhhh_
 * ### .atom-setup
