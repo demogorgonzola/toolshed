@@ -7,13 +7,10 @@
       onlyTopDatatip: true
     use: {}
   core:
-    disabledPackages: [
-      "ide-typescript"
-    ]
     telemetryConsent: "limited"
     themes: [
-      "one-dark-ui"
-      "atom-material-syntax-dark"
+      "one-light-ui"
+      "one-dark-syntax"
     ]
   editor:
     fontSize: 12
@@ -28,3 +25,7 @@
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "

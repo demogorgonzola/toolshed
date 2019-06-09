@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-rm -rf ~/.atom
+rm -rf ~/.atom 2> /dev/null
 apm install --packages-file ./.atom/packages.list
+cp .atom/config.cson ~/.atom
+cp .atom/keymap.cson ~/.atom

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
 apm list --installed --bare > .atom/packages.list
-cp ~/.atom/keymap.cson .atom/keymap.cson
+cp ~/.atom/config.cson .atom
+cp ~/.atom/keymap.cson .atom
